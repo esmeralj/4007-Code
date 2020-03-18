@@ -10,10 +10,7 @@ using namespace std;
 // Main entry point into the server
 void main()
 {
-    ////////////////////////////////////////////////////////////
-    // INITIALIZE WINSOCK
-    ////////////////////////////////////////////////////////////
-
+   
     // Structure to store the WinSock version. This is filled in
     // on the call to WSAStartup()
     WSADATA data;
@@ -33,9 +30,7 @@ void main()
         return;
     }
 
-    ////////////////////////////////////////////////////////////
-    // SOCKET CREATION AND BINDING
-    ////////////////////////////////////////////////////////////
+   
 
     // Create a socket, notice that it is a user datagram socket (UDP)
     SOCKET in = socket(AF_INET, SOCK_DGRAM, 0);
@@ -53,9 +48,6 @@ void main()
         return;
     }
 
-    ////////////////////////////////////////////////////////////
-    // MAIN LOOP SETUP AND ENTRY
-    ////////////////////////////////////////////////////////////
 
     sockaddr_in client; // Use to hold the client information (port / ip address)
     int clientLength = sizeof(client); // The size of the client information
