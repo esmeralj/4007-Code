@@ -6,7 +6,6 @@
 #ifndef NPC_ENEMY_H
 #define NPC_ENEMY_H
 
-#include "non_player_character.h"
 using namespace std;
 class Hostile_NPC : public Non_Player_Character
 {
